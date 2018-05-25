@@ -8,7 +8,11 @@ app.set('view engine', 'hbs');
 
 app.use(express.static('public'));
 
+app.get('/', (req, res) => {
+    
+    res.render('home');
+    });
 
-app.get('/checkout', (req, res) => {
-    res.render('checkout');
+app.listen(3000, () => {
+    console.log("Puerto working duh");
 });
