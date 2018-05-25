@@ -1,6 +1,9 @@
 const express = require('express'),
     consolidate = require('consolidate'),
     app = express();
+ 
+ var fs = require('fs');
+    
 
 app.engine('hbs', consolidate.handlebars);
 app.set('views', './views');
